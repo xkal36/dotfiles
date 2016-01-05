@@ -10,10 +10,6 @@ exec --no-startup-id xterm
 exec --no-startup-id chromium
 exec -no-startip-id emacs
 
-# Assigning certain programs to certain workspaces
-assign [class="Emacs"] 3
-assign [class="chromium"] 1
-assign [class=XTerm] 2
 
 # Monitor:
 exec --no-startup-id xrandr --output eDP1 --off
