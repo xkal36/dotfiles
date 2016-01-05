@@ -8,7 +8,7 @@ exec --no-startuup-id compton -b
 exec --no-startup-id feh --bg-scale wp.png
 exec --no-startup-id xterm
 exec --no-startup-id chromium
-exec -no-startip-id emacs
+exec --no-startip-id emacs
 
 
 # Monitor:
@@ -25,7 +25,7 @@ bindsym $mod+shift+b exec chromium
 font pango:DejaVu Sans Mono 8
 
 
-# use these keys for focus, movement, and resize directions when reaching for
+# using these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
 set $up l
 set $down k
