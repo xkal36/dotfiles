@@ -1,0 +1,121 @@
+# For syntax highlighting in arch, nano-syntax-highlighting-git package must be installed (from the AUR)
+
+include /usr/share/nano-syntax-highlighting/Dockerfile.nanorc
+include /usr/share/nano-syntax-highlighting/apacheconf.nanorc
+include /usr/share/nano-syntax-highlighting/arduino.nanorc
+include /usr/share/nano-syntax-highlighting/asciidoc.nanorc
+include /usr/share/nano-syntax-highlighting/asm.nanorc
+include /usr/share/nano-syntax-highlighting/awk.nanorc
+include /usr/share/nano-syntax-highlighting/c.nanorc
+include /usr/share/nano-syntax-highlighting/cmake.nanorc
+include /usr/share/nano-syntax-highlighting/coffeescript.nanorc
+include /usr/share/nano-syntax-highlighting/colortest.nanorc
+include /usr/share/nano-syntax-highlighting/conf.nanorc
+include /usr/share/nano-syntax-highlighting/conky.nanorc
+include /usr/share/nano-syntax-highlighting/csharp.nanorc
+include /usr/share/nano-syntax-highlighting/css.nanorc
+include /usr/share/nano-syntax-highlighting/cython.nanorc
+include /usr/share/nano-syntax-highlighting/dot.nanorc
+include /usr/share/nano-syntax-highlighting/email.nanorc
+include /usr/share/nano-syntax-highlighting/erb.nanorc
+include /usr/share/nano-syntax-highlighting/fish.nanorc
+include /usr/share/nano-syntax-highlighting/fortran.nanorc
+include /usr/share/nano-syntax-highlighting/gentoo.nanorc
+include /usr/share/nano-syntax-highlighting/git.nanorc
+include /usr/share/nano-syntax-highlighting/glsl.nanorc
+include /usr/share/nano-syntax-highlighting/go.nanorc
+include /usr/share/nano-syntax-highlighting/groff.nanorc
+include /usr/share/nano-syntax-highlighting/haml.nanorc
+include /usr/share/nano-syntax-highlighting/haskell.nanorc
+include /usr/share/nano-syntax-highlighting/html.nanorc
+include /usr/share/nano-syntax-highlighting/ini.nanorc
+include /usr/share/nano-syntax-highlighting/inputrc.nanorc
+include /usr/share/nano-syntax-highlighting/java.nanorc
+include /usr/share/nano-syntax-highlighting/javascript.nanorc
+include /usr/share/nano-syntax-highlighting/js.nanorc
+include /usr/share/nano-syntax-highlighting/json.nanorc
+include /usr/share/nano-syntax-highlighting/keymap.nanorc
+include /usr/share/nano-syntax-highlighting/kickstart.nanorc
+include /usr/share/nano-syntax-highlighting/ledger.nanorc
+include /usr/share/nano-syntax-highlighting/lisp.nanorc
+include /usr/share/nano-syntax-highlighting/lua.nanorc
+include /usr/share/nano-syntax-highlighting/makefile.nanorc
+include /usr/share/nano-syntax-highlighting/man.nanorc
+include /usr/share/nano-syntax-highlighting/markdown.nanorc
+include /usr/share/nano-syntax-highlighting/mpdconf.nanorc
+include /usr/share/nano-syntax-highlighting/mutt.nanorc
+include /usr/share/nano-syntax-highlighting/nanorc.nanorc
+include /usr/share/nano-syntax-highlighting/nginx.nanorc
+include /usr/share/nano-syntax-highlighting/ocaml.nanorc
+include /usr/share/nano-syntax-highlighting/patch.nanorc
+include /usr/share/nano-syntax-highlighting/peg.nanorc
+include /usr/share/nano-syntax-highlighting/perl.nanorc
+include /usr/share/nano-syntax-highlighting/perl6.nanorc
+include /usr/share/nano-syntax-highlighting/php.nanorc
+include /usr/share/nano-syntax-highlighting/pkg-config.nanorc
+include /usr/share/nano-syntax-highlighting/pkgbuild.nanorc
+include /usr/share/nano-syntax-highlighting/po.nanorc
+include /usr/share/nano-syntax-highlighting/pov.nanorc
+include /usr/share/nano-syntax-highlighting/privoxy.nanorc
+include /usr/share/nano-syntax-highlighting/puppet.nanorc
+include /usr/share/nano-syntax-highlighting/python.nanorc
+include /usr/share/nano-syntax-highlighting/reST.nanorc
+include /usr/share/nano-syntax-highlighting/rpmspec.nanorc
+include /usr/share/nano-syntax-highlighting/ruby.nanorc
+include /usr/share/nano-syntax-highlighting/rust.nanorc
+include /usr/share/nano-syntax-highlighting/scala.nanorc
+include /usr/share/nano-syntax-highlighting/sed.nanorc
+include /usr/share/nano-syntax-highlighting/sh.nanorc
+include /usr/share/nano-syntax-highlighting/sls.nanorc
+include /usr/share/nano-syntax-highlighting/sql.nanorc
+include /usr/share/nano-syntax-highlighting/systemd.nanorc
+include /usr/share/nano-syntax-highlighting/tcl.nanorc
+include /usr/share/nano-syntax-highlighting/tex.nanorc
+include /usr/share/nano-syntax-highlighting/vala.nanorc
+include /usr/share/nano-syntax-highlighting/vi.nanorc
+include /usr/share/nano-syntax-highlighting/xml.nanorc
+include /usr/share/nano-syntax-highlighting/xresources.nanorc
+include /usr/share/nano-syntax-highlighting/yaml.nanorc
+include /usr/share/nano-syntax-highlighting/yum.nanorc
+include /usr/share/nano-syntax-highlighting/zsh.nanorc
+
+
+## Syntax highlighting for system configuration files
+syntax "conf" "(\.(conf|config|cfg|cnf|rc|lst|list|defs|ini|desktop|mime|types|preset|cache|seat|service|htaccess)$|(^|/)(\w*crontab|mirrorlist|group|hosts|passwd|rpc|netconfig|shadow|fstab|inittab|inputrc|protocols|sudoers)$|conf.d/|.config/)"
+
+# default text
+color magenta "^.*$"
+# special values
+icolor brightblue "(^|\s|=)(default|true|false|on|off|yes|no)(\s|$)"
+# keys
+icolor cyan "^\s*(set\s+)?[A-Z0-9_\/\.\%\@+-]+\s*([:]|\>)"
+# commands
+color blue "^\s*set\s+\<"
+# punctuation
+color blue "[.]"
+# numbers
+color red "(^|\s|[[/:|<>(){}=,]|\])[-+]?[0-9](\.?[0-9])*%?($|\>)"
+# keys
+icolor cyan "^\s*(\$if )?([A-Z0-9_\/\.\%\@+-]|\s)+="
+# punctuation
+color blue "/"
+color brightwhite "(\]|[()<>[{},;:=])"
+color brightwhite "(^|\[|\{|\:)\s*-(\s|$)"
+# section headings
+icolor brightyellow "^\s*(\[([A-Z0-9_\.-]|\s)+\])+\s*$"
+color brightcyan "^\s*((Sub)?Section\s*(=|\>)|End(Sub)?Section\s*$)"
+color brightcyan "^\s*\$(end)?if(\s|$)"
+# URLs
+icolor green "\b(([A-Z]+://|www[.])[A-Z0-9/:#?&$=_\.\-]+)(\b|$| )"
+# XML-like tags
+icolor brightcyan "</?\w+((\s*\w+\s*=)?\s*("[^"]*"|'[^']*'|!?[A-Z0-9_:/]))*(\s*/)?>"
+# strings
+color yellow "\"(\\.|[^"])*\"" "'(\\.|[^'])*'"
+# comments
+color white "#.*$"
+color blue "^\s*##.*$"
+color white "^;.*$"
+color white start="<!--" end="-->"
+
+# Disable text wrapping:
+set nowrap
