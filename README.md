@@ -1,1 +1,1 @@
-All my dotfiles (for an Arch Linux system).
+All my dotfiles for my Arch Linux system, should work on any Linux system though.
