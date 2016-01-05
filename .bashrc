@@ -6,6 +6,4 @@ export LS_OPTIONS='--color=auto'
 eval "`dircolors`"
 alias ls='ls $LS_OPTIONS'
 
-
 source /usr/share/git/completion/git-prompt.sh
-
