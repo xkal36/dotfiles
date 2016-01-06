@@ -8,7 +8,7 @@ exec --no-startuup-id compton -b
 exec --no-startup-id feh --bg-scale wp.png
 exec --no-startup-id xterm
 exec --no-startup-id chromium
-exec --no-startip-id emacs
+exec emacs
 
 
 # Monitor:
