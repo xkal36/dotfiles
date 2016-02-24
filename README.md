@@ -1,1 +1,1 @@
-All my dotfiles for my Arch Linux system, should work on any Linux system though.
+Configuartion files for my Arch Linux system with i3 window manager.
