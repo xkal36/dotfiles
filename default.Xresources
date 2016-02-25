@@ -1,0 +1,57 @@
+XTerm*faceName: Bitstream Vera Serif Mono
+XTerm*faceSize: 9
+
+! --- special colors ---
+
+XTerm*background: #000000
+XTerm*foreground: #6aff00
+
+! --- standard colors ---
+
+! black
+XTerm*color0: #000000
+
+! bright_black
+XTerm*color8: #262626
+
+! red
+XTerm*color1: #ff0000
+
+! bright_red
+XTerm*color9: #FF1919
+
+! green
+XTerm*color2: #59d959
+
+! bright_green
+XTerm*color10: #00ff00
+
+! yellow
+XTerm*color3: #d9d959
+
+! bright_yellow
+XTerm*color11: #FFFF00
+
+! blue
+XTerm*color4: #0000ff
+
+! bright_blue
+XTerm*color12: #4ca6ff
+
+! magenta
+XTerm*color5: #ff00ff
+
+! bright_magenta
+XTerm*color13: #FF66FF
+
+! cyan
+XTerm*color6: #59D9D9
+
+! bright_cyan
+XTerm*color14: #00FFFF
+
+! white
+XTerm*color7: #d9d9d9
+
+! bright_white
+XTerm*color15: #ffffff
