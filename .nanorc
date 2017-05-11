@@ -1,5 +1,7 @@
 # For syntax highlighting in arch, nano-syntax-highlighting-git package must be installed (from the AUR)
 
+set linenumbers
+
 include /usr/share/nano-syntax-highlighting/Dockerfile.nanorc
 include /usr/share/nano-syntax-highlighting/apacheconf.nanorc
 include /usr/share/nano-syntax-highlighting/arduino.nanorc
