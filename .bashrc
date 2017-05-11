@@ -1,6 +1,6 @@
 export EDITOR=nano
 
-archey
+archey3
 
 export LS_OPTIONS='--color=auto'
 eval "`dircolors`"
@@ -89,4 +89,4 @@ txtrst='\e[0m'    # Text Reset
 # export all these for subshells
 export -f parse_git_branch parse_git_status we_are_in_git_work_tree pwd_depth_limit_2
 
-export PS1="\n┌─[\[$txtblu\]\u@\h\[$txtrst\]:\[$txtylw\]\w\[$txtcyn\] \$git_branch\[$txtpur\] \[$textylw\]\$\[$txtrst\]]\n└─> "
+export PS1="\n┌─[\[$txtblu\]\u@\h\[$txtrst\]:\[$txtylw\]\w\[$txtcyn\] \$git_branch\[$txtpur\] \[$textylw\]\[$txtrst\]]\n└─> "
