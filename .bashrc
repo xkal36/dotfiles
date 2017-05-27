@@ -109,4 +109,4 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 VENV="\$(virtualenv_info)";
 
 
-export PS1="\n┌─[\[$txtblu\]\u@\h\[$txtrst\]:\[$txtylw\]\w\[$txtcyn\] \$git_branch\[$txtpur\]\[$textylw\]\[$txtrst\] \[$txtpur\] ${VENV}\[$txtrst\]] \n└─> "
+export PS1="\n┌─[\[$txtblu\]\u@\h\[$txtrst\]:\[$txtylw\]\w\[$txtcyn\] \$git_branch\[$txtpur\]\[$textylw\]\[$txtrst\]\[$txtpur\] ${VENV}\[$txtrst\]] \n└─> "
