@@ -86,7 +86,27 @@ bakcyn='\e[46m'   # Cyan
 bakwht='\e[47m'   # White
 txtrst='\e[0m'    # Text Reset
 
+
+
 # export all these for subshells
 export -f parse_git_branch parse_git_status we_are_in_git_work_tree pwd_depth_limit_2
 
-export PS1="\n┌─[\[$txtblu\]\u@\h\[$txtrst\]:\[$txtylw\]\w\[$txtcyn\] \$git_branch\[$txtpur\] \[$textylw\]\[$txtrst\]]\n└─> "
+function virtualenv_info(){
+    # Get Virtual Env
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+        # Strip out the path and just leave the env name
+        venv="${VIRTUAL_ENV##*/}"
+    else
+        # In case you don't have one activated
+        venv=''
+    fi
+    [[ -n "$venv" ]] && echo "(venv:$venv) "
+}
+
+# disable the default virtualenv prompt change
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+VENV="\$(virtualenv_info)";
+
+
+export PS1="\n┌─[\[$txtblu\]\u@\h\[$txtrst\]:\[$txtylw\]\w\[$txtcyn\] \$git_branch\[$txtpur\]\[$textylw\]\[$txtrst\] \[$txtpur\] ${VENV}\[$txtrst\]] \n└─> "
