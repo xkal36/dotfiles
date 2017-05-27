@@ -100,7 +100,7 @@ function virtualenv_info(){
         # In case you don't have one activated
         venv=''
     fi
-    [[ -n "$venv" ]] && echo "(venv:$venv) "
+    [[ -n "$venv" ]] && echo "(venv:$venv)"
 }
 
 # disable the default virtualenv prompt change
