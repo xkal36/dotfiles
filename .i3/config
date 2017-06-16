@@ -4,15 +4,17 @@ set $mod Mod4
 
 # Startup commands/programs
 exec --no-startup-id xrdb -load .Xresources
-exec --no-startuup-id compton -b
-exec --no-startup-id feh --bg-scale wp.png
+#exec --no-startup-id compton -b
+exec --no-startup-id /usr/bin/feh --bg-scale wp.png
 #exec --no-startup-id xterm
 #exec --no-startup-id chromium
-exec emacs
+#exec emacs
 
 
-# Monitor:
-exec --no-startup-id xrandr --output eDP1 --off
+# Monitor (commands will depend on individiual machine):
+exec xrandr --output eDP-1 --off
+#exec xrandr --output HDMI-1 --mode 1920x1080 --primary
+
 
 # My own keybindings
 bindsym $mod+shift+x exec i3lock
